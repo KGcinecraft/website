@@ -57,7 +57,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .skip{position:absolute;left:-999px;top:8px;background:var(--brass);color:var(--bg);padding:10px 16px;z-index:100;border-radius:3px}
 .skip:focus{left:8px}
 
-.wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--pad)}
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:max(var(--pad),env(safe-area-inset-left,0px)) max(var(--pad),env(safe-area-inset-right,0px))}
 .sec{padding-block:clamp(72px,10vw,136px);scroll-margin-top:64px}
 .dark{background:var(--bg);color:var(--on-dark)}
 .dark-2{background:var(--bg-2);color:var(--on-dark)}
@@ -79,11 +79,11 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* Header */
 .site-header{position:sticky;top:0;z-index:50;background:rgba(15,35,29,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line-dark)}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:64px}
-.brand{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.brand{display:flex;align-items:baseline;gap:10px;text-decoration:none;white-space:nowrap}
 .brand b{font-family:var(--serif);font-weight:400;font-size:1.7rem;letter-spacing:-.01em}
 .brand span{font-size:.8rem;color:var(--muted-dark)}
 .site-nav{display:flex;align-items:center;gap:28px}
-.site-nav a{text-decoration:none;font-size:.95rem;color:var(--muted-dark)}
+.site-nav a{text-decoration:none;font-size:.95rem;color:var(--muted-dark);white-space:nowrap}
 .site-nav a:hover{color:var(--on-dark)}
 .site-nav .btn{color:var(--bg);padding:9px 18px;font-size:.92rem}
 .site-nav .btn:hover{color:var(--bg)}
@@ -114,11 +114,12 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* Work */
 .work-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:28px;margin-bottom:44px}
 .filters{display:flex;flex-wrap:wrap;gap:6px 26px}
-.filters button{background:none;border:0;border-bottom:2px solid transparent;padding:6px 0;cursor:pointer;color:var(--muted-dark);font-size:.98rem}
+.filters button{background:none;border:0;border-bottom:2px solid transparent;padding:10px 2px;min-height:44px;cursor:pointer;color:var(--muted-dark);font-size:.98rem}
 .filters button:hover{color:var(--on-dark)}
 .filters button[aria-pressed="true"]{color:var(--on-dark);border-bottom-color:var(--brass)}
 .films{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px 28px;align-items:start}
-.film.lead{grid-column:span 2;grid-row:span 2}
+.film.lead{grid-column:span 2;grid-row:span 2;align-self:stretch;display:flex;flex-direction:column}
+.film.lead .thumb{aspect-ratio:auto;flex:1 1 auto;min-height:260px}
 .thumb{position:relative;display:block;width:100%;aspect-ratio:16/9;overflow:hidden;border:0;padding:0;border-radius:3px;cursor:pointer;background:var(--bg-2)}
 .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .thumb.empty{cursor:default;display:flex;align-items:flex-end}
@@ -140,13 +141,13 @@ button,input,select,textarea{font:inherit;color:inherit}
 .text-link{font-weight:600;text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--brass);text-decoration-thickness:2px}
 
 /* Player dialog */
-dialog{padding:0;border:0;border-radius:4px;background:#000;width:min(1100px,94vw);max-width:none;overflow:visible}
+dialog{padding:0;border:0;border-radius:4px;background:#000;width:min(1100px,94vw,calc(76vh * 16 / 9));max-width:none;max-height:none;overflow:visible}
 dialog::backdrop{background:rgba(5,12,9,.88)}
-dialog.portrait{width:min(400px,90vw)}
+dialog.portrait{width:min(400px,90vw,calc(76vh * 9 / 16))}
 .player-box{aspect-ratio:16/9;width:100%}
-dialog.portrait .player-box{aspect-ratio:9/16;max-height:86vh}
+dialog.portrait .player-box{aspect-ratio:9/16}
 .player-box iframe{width:100%;height:100%;border:0;display:block}
-.close{position:absolute;right:0;top:-48px;background:var(--brass);color:var(--bg);border:0;border-radius:3px;padding:8px 16px;font-weight:600;cursor:pointer}
+.close{position:absolute;right:0;top:-44px;min-height:38px;background:var(--brass);color:var(--bg);border:0;border-radius:3px;padding:8px 16px;font-weight:600;cursor:pointer}
 
 /* Services */
 .services-head{margin-bottom:56px}
@@ -223,22 +224,33 @@ footer{background:var(--bg-3);color:var(--muted-dark);padding-block:44px;font-si
 /* Responsive */
 @media (max-width:1100px){
   .steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:48px 28px}
+  .site-nav{gap:18px}
 }
-@media (max-width:900px){
+@media (min-width:1600px){
+  :root{--max:1440px}
+  body{font-size:1.125rem}
+  .hero-grid{gap:96px}
+}
+@media (max-width:1040px){
   .menu-btn{display:inline-block}
-  .site-nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:flex-start;gap:0;background:var(--bg);border-bottom:1px solid var(--line-dark);padding:8px var(--pad) 22px}
+  .site-nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:flex-start;gap:0;background:var(--bg);border-bottom:1px solid var(--line-dark);padding:8px var(--pad) 22px;box-shadow:0 24px 40px rgba(0,0,0,.35);max-height:calc(100vh - 64px);overflow-y:auto}
   .site-header.open .site-nav{display:flex}
   .site-nav a{padding:12px 0;width:100%;font-size:1.05rem}
   .site-nav .btn{margin-top:10px;width:auto;padding:12px 20px}
-  .hero-grid,.exp-grid,.quotes,.faq-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-grid{grid-template-columns:1fr}
+}
+@media (max-width:900px){
+  .exp-grid,.quotes,.faq-grid,.contact-grid{grid-template-columns:1fr}
   .films{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .film.lead{grid-column:span 2;grid-row:auto}
+  .film.lead{grid-column:span 2;grid-row:auto;display:block}
+  .film.lead .thumb{aspect-ratio:16/9;min-height:0}
   .svc li{grid-template-columns:1fr;gap:8px}
   .svc .len{text-align:left}
 }
 @media (max-width:640px){
   .films{grid-template-columns:1fr}
   .film.lead{grid-column:auto}
+  .film.lead h3{font-size:1.7rem}
   .steps{grid-template-columns:1fr;gap:40px}
   .row{grid-template-columns:1fr}
   .brand span{display:none}
@@ -625,12 +637,12 @@ footer{background:var(--bg-3);color:var(--muted-dark);padding-block:44px;font-si
    The first film in the list becomes the large featured film.
    ========================================================== */
 const FILMS = [
-  { title: "Aanya and Vihaan", kind: "highlight", note: "Destination wedding, 5 minute highlight film", url: "" },
-  { title: "Meera and Rohan",  kind: "teaser",    note: "Day-after teaser, 90 seconds",               url: "" },
-  { title: "Simran and Dev",   kind: "feature",   note: "Full ceremony and speeches, 28 minutes",     url: "" },
-  { title: "Isha and Kabir",   kind: "highlight", note: "Sangeet and wedding, 4 minute highlight",    url: "" },
-  { title: "Tara and Arjun",   kind: "teaser",    note: "Wedding trailer for social media",           url: "" },
-  { title: "Naina and Sameer", kind: "reel",      note: "Vertical reel for Instagram",                url: "" }
+  { title: "Aanya and Vihaan", kind: "highlight", note: "Destination wedding, 5 minutes", url: "" },
+  { title: "Meera and Rohan",  kind: "teaser",    note: "Delivered the day after, 90 seconds",               url: "" },
+  { title: "Simran and Dev",   kind: "feature",   note: "Ceremony and speeches, 28 minutes",     url: "" },
+  { title: "Isha and Kabir",   kind: "highlight", note: "Sangeet and wedding, 4 minutes",    url: "" },
+  { title: "Tara and Arjun",   kind: "teaser",    note: "Made for social media",           url: "" },
+  { title: "Naina and Sameer", kind: "reel",      note: "Vertical, made for Instagram",                url: "" }
 ];
 
 const SITE = {
@@ -685,7 +697,7 @@ const SITE = {
           '<img src="https://i.ytimg.com/vi/' + yt.id + '/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="play"></span></button>'
         : '<div class="thumb empty ' + poster + '"><span>Video coming soon</span></div>';
       return '<article class="film' + (i === 0 ? " lead" : "") + '">' + thumb +
-        "<h3>" + esc(f.title) + "</h3><p>" + esc(KINDS[f.kind] || "Film") + ", " + esc(f.note || "").replace(/^./, c => c.toLowerCase()) + "</p></article>";
+        "<h3>" + esc(f.title) + "</h3><p>" + esc(KINDS[f.kind] || "Film") + (f.note ? ", " + esc(f.note).replace(/^./, c => c.toLowerCase()) : "") + "</p></article>";
     }).join("");
   }
   render("all");
