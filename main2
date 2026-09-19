@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KG Cinecraft Post Production | Wedding film editing and colour grading</title>
+<meta name="description" content="KG Cinecraft Post Production edits wedding films: cinematic highlight films, teasers, full-length edits, colour grading and sound design for couples, videographers and wedding studios.">
+<meta name="theme-color" content="#0F231D">
+<meta property="og:type" content="website">
+<meta property="og:title" content="KG Cinecraft Post Production">
+<meta property="og:description" content="Wedding film editing, colour grading and sound design. You shoot the day. We finish the film.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230F231D'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23D0A264'%3EKG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "KG Cinecraft Post Production",
+  "description": "Wedding film post-production: editing, colour grading and sound design.",
+  "serviceType": ["Wedding film editing", "Colour grading", "Sound design"]
+}
+</script>
+
+<style>
+:root{
+  --bg:#0F231D;
+  --bg-2:#153228;
+  --bg-3:#0A1813;
+  --paper:#FBF5F2;
+  --blush:#F3E4DE;
+  --blush-2:#E7CBC1;
+  --brass:#D0A264;
+  --brass-ink:#7C5522;
+  --ink:#15201B;
+  --ink-soft:#4A5851;
+  --on-dark:#EFE3DC;
+  --muted-dark:#A9B8B0;
+  --line-dark:rgba(239,227,220,.18);
+  --line-light:rgba(21,32,27,.18);
+  --serif:'Instrument Serif','Iowan Old Style','Palatino Linotype',Georgia,serif;
+  --sans:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --pad:clamp(20px,5vw,72px);
+  --max:1240px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;font-family:var(--sans);font-size:1.0625rem;line-height:1.6;color:var(--on-dark);background:var(--bg);-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,p,ol,ul,figure,blockquote,dl,dd{margin:0}
+ul,ol{padding:0;list-style:none}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--brass);color:var(--bg);padding:10px 16px;z-index:100;border-radius:3px}
+.skip:focus{left:8px}
+
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:max(var(--pad),env(safe-area-inset-left,0px)) max(var(--pad),env(safe-area-inset-right,0px))}
+.sec{padding-block:clamp(72px,10vw,136px);scroll-margin-top:64px}
+.dark{background:var(--bg);color:var(--on-dark)}
+.dark-2{background:var(--bg-2);color:var(--on-dark)}
+.light{background:var(--paper);color:var(--ink)}
+.blush{background:var(--blush);color:var(--ink)}
+
+.display{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;line-height:1.04}
+.h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.2rem,4.4vw,3.6rem);line-height:1.06;letter-spacing:-.01em;max-width:18ch}
+.lead-p{font-size:1.125rem;max-width:58ch}
+.on-dark-muted{color:var(--muted-dark)}
+.on-light-muted{color:var(--ink-soft)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 26px;border-radius:3px;font-weight:600;font-size:1rem;text-decoration:none;border:1.5px solid var(--brass);cursor:pointer;line-height:1.2}
+.btn-solid{background:var(--brass);color:var(--bg)}
+.btn-solid:hover{background:#DDB578}
+.btn-ghost{background:transparent;color:var(--on-dark)}
+.btn-ghost:hover{background:rgba(208,162,100,.14)}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(15,35,29,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line-dark)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:64px}
+.brand{display:flex;align-items:baseline;gap:10px;text-decoration:none;white-space:nowrap}
+.brand b{font-family:var(--serif);font-weight:400;font-size:1.7rem;letter-spacing:-.01em}
+.brand span{font-size:.8rem;color:var(--muted-dark)}
+.site-nav{display:flex;align-items:center;gap:28px}
+.site-nav a{text-decoration:none;font-size:.95rem;color:var(--muted-dark);white-space:nowrap}
+.site-nav a:hover{color:var(--on-dark)}
+.site-nav .btn{color:var(--bg);padding:9px 18px;font-size:.92rem}
+.site-nav .btn:hover{color:var(--bg)}
+.menu-btn{display:none;background:none;border:1px solid var(--line-dark);border-radius:3px;padding:8px 14px;cursor:pointer;font-size:.92rem}
+
+/* Hero */
+.hero{padding-block:clamp(48px,8vw,104px) clamp(64px,9vw,120px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,80px);align-items:center}
+.hero h1{font-size:clamp(2.9rem,5.6vw,5.4rem)}
+.hero .sub{margin-top:26px;font-size:1.15rem;color:var(--muted-dark);max-width:44ch}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+
+.grade figcaption{margin-top:14px;font-size:.92rem;color:var(--muted-dark)}
+.frame{position:relative;aspect-ratio:16/10;overflow:hidden;border-radius:4px;touch-action:pan-y;cursor:ew-resize;--pos:50%;background:#000;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.frame .layer{position:absolute;inset:0}
+.frame .layer svg{width:100%;height:100%}
+.frame .raw{clip-path:inset(0 calc(100% - var(--pos)) 0 0);filter:saturate(.1) contrast(.55) brightness(1.2)}
+.frame .raw::after{content:"";position:absolute;inset:0;background:rgba(160,160,155,.28)}
+.tag{position:absolute;top:14px;font-size:.82rem;font-weight:600;padding:5px 11px;border-radius:2px;background:rgba(10,24,19,.72);color:var(--on-dark);pointer-events:none}
+.tag-l{left:14px}
+.tag-r{right:14px;background:rgba(208,162,100,.92);color:var(--bg)}
+.tc{position:absolute;left:16px;bottom:12px;font-size:.85rem;font-variant-numeric:tabular-nums;letter-spacing:.06em;color:rgba(255,255,255,.85);text-shadow:0 1px 6px rgba(0,0,0,.6);pointer-events:none}
+.handle{position:absolute;top:0;bottom:0;left:var(--pos);width:44px;margin-left:-22px;display:flex;align-items:center;justify-content:center;outline-offset:-4px}
+.handle::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:2px;margin-left:-1px;background:var(--brass)}
+.handle span{position:relative;width:44px;height:44px;border-radius:50%;background:var(--brass);color:var(--bg);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(0,0,0,.4)}
+.handle svg{width:22px;height:22px}
+
+/* Work */
+.work-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:28px;margin-bottom:44px}
+.filters{display:flex;flex-wrap:wrap;gap:6px 26px}
+.filters button{background:none;border:0;border-bottom:2px solid transparent;padding:10px 2px;min-height:44px;cursor:pointer;color:var(--muted-dark);font-size:.98rem}
+.filters button:hover{color:var(--on-dark)}
+.filters button[aria-pressed="true"]{color:var(--on-dark);border-bottom-color:var(--brass)}
+.films{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px 28px;align-items:start}
+.film.lead{grid-column:span 2;grid-row:span 2;align-self:stretch;display:flex;flex-direction:column}
+.film.lead .thumb{aspect-ratio:auto;flex:1 1 auto;min-height:260px}
+.thumb{position:relative;display:block;width:100%;aspect-ratio:16/9;overflow:hidden;border:0;padding:0;border-radius:3px;cursor:pointer;background:var(--bg-2)}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.thumb.empty{cursor:default;display:flex;align-items:flex-end}
+.thumb.empty span{padding:12px 14px;font-size:.85rem;color:rgba(255,255,255,.85);text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.play{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(15,35,29,.72);border:1.5px solid var(--brass);display:flex;align-items:center;justify-content:center}
+.play::before{content:"";margin-left:4px;border-left:16px solid var(--brass);border-top:10px solid transparent;border-bottom:10px solid transparent}
+.thumb:hover .play{background:var(--brass)}
+.thumb:hover .play::before{border-left-color:var(--bg)}
+.film h3{font-family:var(--serif);font-weight:400;font-size:1.6rem;line-height:1.15;margin-top:16px}
+.film.lead h3{font-size:2.1rem}
+.film p{color:var(--muted-dark);font-size:.95rem;margin-top:4px}
+.p1{background:radial-gradient(circle at 72% 68%,rgba(255,220,160,.6),transparent 38%),linear-gradient(165deg,#1E3F55,#8C5A6B 58%,#E8955A)}
+.p2{background:radial-gradient(circle at 25% 70%,rgba(255,200,170,.5),transparent 40%),linear-gradient(170deg,#2B2F4F,#7A4A62 55%,#D98A6A)}
+.p3{background:radial-gradient(circle at 60% 75%,rgba(255,230,170,.55),transparent 40%),linear-gradient(160deg,#173B31,#4F6B4A 55%,#C9A05E)}
+.p4{background:radial-gradient(circle at 40% 72%,rgba(255,225,190,.5),transparent 40%),linear-gradient(165deg,#3B2436,#A05A6E 55%,#F0B79A)}
+.p5{background:radial-gradient(circle at 70% 70%,rgba(255,230,190,.5),transparent 40%),linear-gradient(165deg,#12313A,#2F6B6B 55%,#E3B47A)}
+.p6{background:radial-gradient(circle at 30% 72%,rgba(255,215,180,.5),transparent 40%),linear-gradient(165deg,#2A1F3A,#6D4A7A 55%,#E9A07E)}
+.work-foot{margin-top:56px}
+.text-link{font-weight:600;text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--brass);text-decoration-thickness:2px}
+
+/* Player dialog */
+dialog{padding:0;border:0;border-radius:4px;background:#000;width:min(1100px,94vw,calc(76vh * 16 / 9));max-width:none;max-height:none;overflow:visible}
+dialog::backdrop{background:rgba(5,12,9,.88)}
+dialog.portrait{width:min(400px,90vw,calc(76vh * 9 / 16))}
+.player-box{aspect-ratio:16/9;width:100%}
+dialog.portrait .player-box{aspect-ratio:9/16}
+.player-box iframe{width:100%;height:100%;border:0;display:block}
+.close{position:absolute;right:0;top:-44px;min-height:38px;background:var(--brass);color:var(--bg);border:0;border-radius:3px;padding:8px 16px;font-weight:600;cursor:pointer}
+
+/* Services */
+.services-head{margin-bottom:56px}
+.svc{border-top:1px solid var(--line-light)}
+.svc li{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr) minmax(0,2fr);gap:24px;padding:30px 0;border-bottom:1px solid var(--line-light);align-items:baseline}
+.svc h3{font-family:var(--serif);font-weight:400;font-size:1.9rem;line-height:1.1}
+.svc p{color:var(--ink-soft);max-width:52ch}
+.svc .len{color:var(--brass-ink);font-weight:600;font-size:.95rem;text-align:right}
+
+/* Process */
+.process-head{margin-bottom:64px}
+.steps{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0 28px}
+.steps li{position:relative;border-top:1px solid var(--line-dark);padding-top:30px;padding-bottom:12px}
+.steps li::before{content:"";position:absolute;left:0;top:-7px;width:13px;height:13px;border-radius:50%;background:var(--brass);box-shadow:0 0 0 5px var(--bg-2)}
+.steps .when{font-size:.88rem;color:var(--brass);font-weight:600}
+.steps h3{font-family:var(--serif);font-weight:400;font-size:1.6rem;line-height:1.1;margin:8px 0 10px}
+.steps p{font-size:.95rem;color:var(--muted-dark)}
+
+/* Experience */
+.exp-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(40px,7vw,110px);align-items:start}
+.exp-copy p{margin-top:22px;color:var(--ink-soft);max-width:54ch}
+.exp-copy p:first-of-type{margin-top:28px}
+.stats{border-top:1px solid var(--line-light)}
+.stats div{display:flex;align-items:baseline;gap:22px;padding:22px 0;border-bottom:1px solid var(--line-light)}
+.stats dt{font-family:var(--serif);font-size:3rem;line-height:1;min-width:3.6ch;color:var(--ink)}
+.stats dd{color:var(--ink-soft)}
+.clients{margin-top:clamp(64px,8vw,104px)}
+.clients h3{font-size:1.05rem;font-weight:600;margin-bottom:22px}
+.client-list{display:flex;flex-wrap:wrap;gap:12px 44px;font-family:var(--serif);font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.2;color:var(--ink)}
+
+/* Testimonials */
+.quotes{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(40px,7vw,100px);align-items:start;margin-top:56px}
+.quote-main blockquote{font-family:var(--serif);font-size:clamp(1.7rem,3vw,2.5rem);line-height:1.22}
+.quote-main cite,.quote-side cite{display:block;margin-top:22px;font-style:normal;font-size:.95rem;color:var(--muted-dark)}
+.quote-main cite b,.quote-side cite b{display:block;color:var(--on-dark);font-weight:600}
+.quote-side figure{padding-block:28px;border-top:1px solid var(--line-dark)}
+.quote-side figure:first-child{padding-top:0;border-top:0}
+.quote-side blockquote{font-size:1.08rem;line-height:1.55}
+.quote-side cite{margin-top:14px}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(32px,6vw,96px);align-items:start}
+.faq details{border-top:1px solid var(--line-light)}
+.faq details:last-child{border-bottom:1px solid var(--line-light)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;font-family:var(--serif);font-size:1.5rem;line-height:1.2;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-52%);font-family:var(--sans);font-size:1.6rem;color:var(--brass-ink)}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{padding:0 44px 24px 0;color:var(--ink-soft);max-width:60ch}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(40px,7vw,100px);align-items:start}
+.contact-list{margin-top:36px;display:grid;gap:14px}
+.contact-list a{text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--brass)}
+.contact-list dt{font-size:.85rem;color:var(--muted-dark)}
+form{display:grid;gap:20px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+label{display:grid;gap:8px;font-size:.95rem;font-weight:500}
+input,select,textarea{width:100%;background:var(--bg-2);border:1px solid var(--line-dark);border-radius:3px;padding:13px 14px;font-size:1rem}
+input::placeholder,textarea::placeholder{color:#7E9088}
+select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--brass) 50%),linear-gradient(135deg,var(--brass) 50%,transparent 50%);background-position:calc(100% - 20px) 55%,calc(100% - 14px) 55%;background-size:6px 6px;background-repeat:no-repeat}
+textarea{min-height:130px;resize:vertical}
+.form-note{font-size:.92rem;color:var(--muted-dark);min-height:1.4em}
+form .btn{justify-self:start}
+
+/* Footer */
+footer{background:var(--bg-3);color:var(--muted-dark);padding-block:44px;font-size:.92rem}
+.foot{display:flex;flex-wrap:wrap;gap:16px 40px;justify-content:space-between;align-items:baseline}
+.foot b{font-family:var(--serif);font-weight:400;font-size:1.5rem;color:var(--on-dark)}
+.foot nav{display:flex;gap:22px;flex-wrap:wrap}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--on-dark)}
+
+/* Responsive */
+@media (max-width:1100px){
+  .steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:48px 28px}
+  .site-nav{gap:18px}
+}
+@media (min-width:1600px){
+  :root{--max:1440px}
+  body{font-size:1.125rem}
+  .hero-grid{gap:96px}
+}
+@media (max-width:1040px){
+  .menu-btn{display:inline-block}
+  .site-nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:flex-start;gap:0;background:var(--bg);border-bottom:1px solid var(--line-dark);padding:8px var(--pad) 22px;box-shadow:0 24px 40px rgba(0,0,0,.35);max-height:calc(100vh - 64px);overflow-y:auto}
+  .site-header.open .site-nav{display:flex}
+  .site-nav a{padding:12px 0;width:100%;font-size:1.05rem}
+  .site-nav .btn{margin-top:10px;width:auto;padding:12px 20px}
+  .hero-grid{grid-template-columns:1fr}
+}
+@media (max-width:900px){
+  .exp-grid,.quotes,.faq-grid,.contact-grid{grid-template-columns:1fr}
+  .films{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .film.lead{grid-column:span 2;grid-row:auto;display:block}
+  .film.lead .thumb{aspect-ratio:16/9;min-height:0}
+  .svc li{grid-template-columns:1fr;gap:8px}
+  .svc .len{text-align:left}
+}
+@media (max-width:640px){
+  .films{grid-template-columns:1fr}
+  .film.lead{grid-column:auto}
+  .film.lead h3{font-size:1.7rem}
+  .steps{grid-template-columns:1fr;gap:40px}
+  .row{grid-template-columns:1fr}
+  .brand span{display:none}
+  .stats dt{font-size:2.5rem}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Shared artwork for the before/after colour grade in the hero -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E3F55"/>
+      <stop offset=".45" stop-color="#8C5A6B"/>
+      <stop offset=".72" stop-color="#E8955A"/>
+      <stop offset="1" stop-color="#F6C784"/>
+    </linearGradient>
+    <radialGradient id="sun">
+      <stop offset="0" stop-color="#FFF3CF"/>
+      <stop offset=".25" stop-color="#FBC16A" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#F08A4B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bokeh">
+      <stop offset="0" stop-color="#FFE1A8" stop-opacity=".34"/>
+      <stop offset=".7" stop-color="#FFD08A" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#FFD08A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bulb">
+      <stop offset="0" stop-color="#FFF0C4"/>
+      <stop offset=".35" stop-color="#FFD98A" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#FFD98A" stop-opacity="0"/>
+    </radialGradient>
+    <symbol id="scene" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+      <rect width="1600" height="1000" fill="url(#sky)"/>
+      <circle cx="800" cy="650" r="300" fill="url(#sun)"/>
+      <path d="M0 700 C200 650 380 690 560 660 C760 625 940 690 1150 655 C1330 625 1480 670 1600 650 V1000 H0Z" fill="#5B3F52"/>
+      <path d="M0 780 C240 730 420 790 640 760 C900 725 1120 790 1340 752 C1450 735 1540 760 1600 750 V1000 H0Z" fill="#3A2B3A"/>
+      <ellipse cx="170" cy="640" rx="86" ry="170" fill="#2A2030"/>
+      <ellipse cx="300" cy="690" rx="60" ry="120" fill="#2F2435"/>
+      <ellipse cx="1440" cy="630" rx="92" ry="180" fill="#2A2030"/>
+      <ellipse cx="1310" cy="690" rx="58" ry="118" fill="#2F2435"/>
+      <path d="M0 850 C400 815 1200 815 1600 850 V1000 H0Z" fill="#1F1519"/>
+      <!-- floral arch -->
+      <path d="M560 870 V520 A240 240 0 0 1 1040 520 V870" fill="none" stroke="#2A1E27" stroke-width="14"/>
+      <path d="M560 870 V520 A240 240 0 0 1 1040 520 V870" fill="none" stroke="#3E5B45" stroke-width="22" stroke-dasharray="20 9" opacity=".85"/>
+      <path d="M560 870 V520 A240 240 0 0 1 1040 520 V870" fill="none" stroke="#E9A7A0" stroke-width="26" stroke-dasharray="1 30" stroke-linecap="round"/>
+      <path d="M560 870 V520 A240 240 0 0 1 1040 520 V870" fill="none" stroke="#F6DDB6" stroke-width="16" stroke-dasharray="1 46" stroke-dashoffset="14" stroke-linecap="round"/>
+      <!-- couple -->
+      <g fill="#1B1218" stroke="#1B1218">
+        <path d="M762 566 C722 578 692 640 672 770 C702 706 732 646 764 612Z" opacity=".55" stroke="none"/>
+        <circle cx="764" cy="590" r="22" stroke="none"/>
+        <path d="M746 612 H782 L786 648 H742Z" stroke="none"/>
+        <path d="M742 648 C736 724 702 802 676 868 H852 C826 802 792 724 786 648Z" stroke="none"/>
+        <circle cx="856" cy="574" r="22" stroke="none"/>
+        <path d="M830 606 H882 L888 722 H824Z" stroke="none"/>
+        <rect x="832" y="720" width="19" height="148" stroke="none"/>
+        <rect x="860" y="720" width="19" height="148" stroke="none"/>
+        <path d="M782 632 L822 668" fill="none" stroke-width="9" stroke-linecap="round"/>
+        <path d="M832 634 L818 670" fill="none" stroke-width="9" stroke-linecap="round"/>
+      </g>
+      <!-- fairy lights -->
+      <path d="M0 300 C400 380 1200 380 1600 300" fill="none" stroke="#3A2A33" stroke-width="3"/>
+      <g>
+        <circle cx="131" cy="322" r="26" fill="url(#bulb)"/><circle cx="282" cy="338" r="26" fill="url(#bulb)"/>
+        <circle cx="446" cy="350" r="26" fill="url(#bulb)"/><circle cx="621" cy="358" r="26" fill="url(#bulb)"/>
+        <circle cx="800" cy="360" r="26" fill="url(#bulb)"/><circle cx="979" cy="358" r="26" fill="url(#bulb)"/>
+        <circle cx="1154" cy="350" r="26" fill="url(#bulb)"/><circle cx="1318" cy="338" r="26" fill="url(#bulb)"/>
+        <circle cx="1469" cy="322" r="26" fill="url(#bulb)"/>
+      </g>
+      <!-- bokeh -->
+      <circle cx="240" cy="470" r="70" fill="url(#bokeh)"/><circle cx="1380" cy="540" r="92" fill="url(#bokeh)"/>
+      <circle cx="1240" cy="230" r="52" fill="url(#bokeh)"/><circle cx="420" cy="200" r="42" fill="url(#bokeh)"/>
+      <circle cx="1500" cy="800" r="112" fill="url(#bokeh)"/><circle cx="140" cy="790" r="100" fill="url(#bokeh)"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="KG Cinecraft Post Production, home"><b>KG Cinecraft</b><span>Post Production</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-solid" href="#contact">Start a project</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="dark hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 class="display">Your wedding day, cut into a film you'll rewatch.</h1>
+        <p class="sub">KG Cinecraft Post Production edits, colour grades and sound-designs wedding films for couples, videographers and wedding studios. You shoot the day. We finish the film.</p>
+        <div class="cta">
+          <a class="btn btn-solid" href="#work">Watch recent films</a>
+          <a class="btn btn-ghost" href="#contact">Start a project</a>
+        </div>
+      </div>
+
+      <figure class="grade">
+        <div class="frame" id="frame">
+          <div class="layer graded"><svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A wedding couple silhouetted under a floral arch at sunset, colour graded"><use href="#scene" width="1600" height="1000"/></svg></div>
+          <div class="layer raw" aria-hidden="true"><svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice"><use href="#scene" width="1600" height="1000"/></svg></div>
+          <span class="tag tag-l">Ungraded</span>
+          <span class="tag tag-r">Graded</span>
+          <span class="tc" aria-hidden="true">01:14:22:08</span>
+          <div class="handle" id="handle" role="slider" tabindex="0" aria-label="Compare ungraded and graded footage" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+        <figcaption>The same frame, before and after grading. Drag to compare.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="dark-2 sec" id="work">
+    <div class="wrap">
+      <div class="work-head">
+        <h2 class="h2">Recent wedding films</h2>
+        <div class="filters" role="group" aria-label="Filter films">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="highlight" aria-pressed="false">Highlight films</button>
+          <button type="button" data-filter="teaser" aria-pressed="false">Teasers</button>
+          <button type="button" data-filter="feature" aria-pressed="false">Feature films</button>
+          <button type="button" data-filter="reel" aria-pressed="false">Reels</button>
+        </div>
+      </div>
+      <div class="films" id="films"></div>
+      <p class="work-foot"><a class="text-link" id="yt-link" href="https://www.youtube.com/" target="_blank" rel="noopener">See every film on YouTube</a></p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="light sec" id="services">
+    <div class="wrap">
+      <div class="services-head">
+        <h2 class="h2">What we do with your footage</h2>
+      </div>
+      <ul class="svc">
+        <li>
+          <h3>Highlight films</h3>
+          <p>The story of the day in a few minutes: the vows, the laughter and the small moments, cut to music that fits.</p>
+          <span class="len">3 to 6 minutes</span>
+        </li>
+        <li>
+          <h3>Teasers and trailers</h3>
+          <p>A short first look the couple can share within days of the wedding, while everyone is still talking about it.</p>
+          <span class="len">1 to 1.5 minutes</span>
+        </li>
+        <li>
+          <h3>Feature and documentary edits</h3>
+          <p>Ceremony, vows and speeches kept whole and paced like a film, not a recording of an event.</p>
+          <span class="len">20 to 40 minutes</span>
+        </li>
+        <li>
+          <h3>Colour grading</h3>
+          <p>Cameras matched, skin tones protected, and one consistent look from the first frame to the last.</p>
+          <span class="len">Every film</span>
+        </li>
+        <li>
+          <h3>Sound design</h3>
+          <p>Vows and speeches cleaned up, music mixed underneath, and the atmosphere of the venue brought back into the film.</p>
+          <span class="len">Every film</span>
+        </li>
+        <li>
+          <h3>Reels and social cuts</h3>
+          <p>Vertical 9:16 edits for Instagram and YouTube Shorts, made from the same graded footage.</p>
+          <span class="len">15 to 60 seconds</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="dark-2 sec" id="process">
+    <div class="wrap">
+      <div class="process-head">
+        <h2 class="h2">How a project runs, from footage to final film</h2>
+      </div>
+      <!-- EDIT: adjust the timings to match how you really work -->
+      <ol class="steps">
+        <li>
+          <span class="when">Day 0</span>
+          <h3>Send the footage</h3>
+          <p>Share a download link and a short brief: songs, must-have moments and any reference films you like.</p>
+        </li>
+        <li>
+          <span class="when">Day 1 to 2</span>
+          <h3>Sync and select</h3>
+          <p>Cameras and audio are synced, clips organised, and the best moments marked before editing begins.</p>
+        </li>
+        <li>
+          <span class="when">Day 3 to 7</span>
+          <h3>First cut</h3>
+          <p>The story is built with music and pacing, then shared as a private review link.</p>
+        </li>
+        <li>
+          <span class="when">Your review</span>
+          <h3>Notes and revisions</h3>
+          <p>Watch the cut and send timestamped notes. The number of revision rounds is agreed in your quote.</p>
+        </li>
+        <li>
+          <span class="when">Final polish</span>
+          <h3>Colour and sound</h3>
+          <p>Grading, audio cleanup and the final mix happen once the picture is locked.</p>
+        </li>
+        <li>
+          <span class="when">Delivery</span>
+          <h3>Final files</h3>
+          <p>4K or HD masters, a YouTube-ready export, and any social cuts you asked for.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ABOUT / EXPERIENCE / CLIENTS -->
+  <section class="blush sec" id="about">
+    <div class="wrap">
+      <div class="exp-grid">
+        <div class="exp-copy">
+          <h2 class="h2">Post-production for weddings, and nothing else.</h2>
+          <p>Weddings are the only thing KG Cinecraft edits. That focus shows in the work: we know where the emotion sits in a vow, how long to hold a first look, and which speeches deserve to stay whole.</p>
+          <!-- EDIT: change the software list to the tools you actually use -->
+          <p>The edit suite runs on Adobe Premiere Pro, DaVinci Resolve and Adobe Audition, and every project gets a real person who watches all the footage.</p>
+        </div>
+        <!-- EDIT: replace these numbers with your real ones -->
+        <dl class="stats">
+          <div><dt>8+</dt><dd>years editing wedding films</dd></div>
+          <div><dt>400+</dt><dd>wedding films delivered</dd></div>
+          <div><dt>30+</dt><dd>studios and videographers served</dd></div>
+          <div><dt>7</dt><dd>days for a typical first cut</dd></div>
+        </dl>
+      </div>
+
+      <div class="clients">
+        <h3>Studios and videographers we've finished films for</h3>
+        <!-- EDIT: replace with the real companies you have worked for -->
+        <ul class="client-list">
+          <li>Lumen and Thread Films</li>
+          <li>Saptapadi Stories</li>
+          <li>Ivory Reel Co.</li>
+          <li>The Wedding Frame</li>
+          <li>Marigold Motion</li>
+          <li>Second Light Studio</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="dark-2 sec" id="testimonials">
+    <div class="wrap">
+      <h2 class="h2">What clients say</h2>
+      <!-- EDIT: replace with real testimonials and names -->
+      <div class="quotes">
+        <figure class="quote-main">
+          <blockquote>"We watched our film four times the night it arrived. Every moment we cared about was there, and the colours looked exactly like how the day felt."</blockquote>
+          <cite><b>Riya and Karan Mehta</b>Married in December</cite>
+        </figure>
+        <div class="quote-side">
+          <figure>
+            <blockquote>"Clean sync, calm communication and edits that need very few notes. Our shoot team can focus on shooting because we trust the finish."</blockquote>
+            <cite><b>Aarav Sethi</b>Founder, Marigold Motion</cite>
+          </figure>
+          <figure>
+            <blockquote>"The colour grade matched three different cameras so well that no one could tell which shot came from where."</blockquote>
+            <cite><b>Neha Kapoor</b>Lead cinematographer</cite>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="light sec" id="faq">
+    <div class="wrap faq-grid">
+      <h2 class="h2">Questions before you send footage</h2>
+      <!-- EDIT: update the answers to match your real policies -->
+      <div class="faq">
+        <details>
+          <summary>What do you need from me to start?</summary>
+          <p>A download link to the footage (Google Drive, Dropbox or WeTransfer), your song choices if you have them, and a short note on the moments that matter most. A reference film you like helps too.</p>
+        </details>
+        <details>
+          <summary>How long does an edit take?</summary>
+          <p>A first cut of a highlight film typically takes about a week from the day the full footage arrives. Teasers are faster, and long feature edits take longer. You get a clear date in your quote.</p>
+        </details>
+        <details>
+          <summary>How many revisions are included?</summary>
+          <p>Revision rounds are included and the number is stated in your quote. Send timestamped notes on the private review link so changes are quick and precise.</p>
+        </details>
+        <details>
+          <summary>Can you work white-label for my studio?</summary>
+          <p>Yes. Videographers and wedding studios can send footage under their own name, and the finished film is delivered ready to hand to your client.</p>
+        </details>
+        <details>
+          <summary>Which formats do you deliver?</summary>
+          <p>4K and HD masters, a web-optimised export for YouTube or Vimeo, and vertical cuts for Instagram if you ask for them.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="dark sec" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2 class="h2">Have wedding footage that needs a film?</h2>
+        <p class="lead-p on-dark-muted" style="margin-top:24px">Tell us about the wedding and what you'd like made. We'll reply with a timeline and a quote.</p>
+        <dl class="contact-list">
+          <div><dt>Email</dt><dd><a id="c-email" href="mailto:hello@kgcinecraft.com">hello@kgcinecraft.com</a></dd></div>
+          <div><dt>WhatsApp</dt><dd><a id="c-wa" href="https://wa.me/910000000000" target="_blank" rel="noopener">+91 00000 00000</a></dd></div>
+          <div><dt>Instagram</dt><dd><a id="c-ig" href="https://www.instagram.com/" target="_blank" rel="noopener">@kgcinecraft</a></dd></div>
+          <div><dt>YouTube</dt><dd><a id="c-yt" href="https://www.youtube.com/" target="_blank" rel="noopener">KG Cinecraft on YouTube</a></dd></div>
+        </dl>
+      </div>
+
+      <form id="enquiry" novalidate>
+        <div class="row">
+          <label>Your name<input name="name" type="text" autocomplete="name" required></label>
+          <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        </div>
+        <div class="row">
+          <label>What do you need?
+            <select name="need">
+              <option>Highlight film</option>
+              <option>Teaser or trailer</option>
+              <option>Feature or documentary edit</option>
+              <option>Colour grading only</option>
+              <option>Full package</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+          <label>Wedding date<input name="date" type="text" placeholder="For example, 14 February"></label>
+        </div>
+        <label>Tell us about the project<textarea name="message" placeholder="Number of cameras, how much footage, the style you like, and when you need it."></textarea></label>
+        <button class="btn btn-solid" type="submit">Send enquiry</button>
+        <p class="form-note" id="form-note" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><b>KG Cinecraft</b><br>Post Production for wedding films</div>
+    <nav aria-label="Footer">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div>&copy; <span id="yr">2026</span> KG Cinecraft Post Production</div>
+  </div>
+</footer>
+
+<dialog id="player" aria-label="Film player">
+  <button class="close" type="button" id="close-player">Close</button>
+  <div class="player-box" id="player-box"></div>
+</dialog>
+
+<script>
+/* ==========================================================
+   EDIT THIS BLOCK: your films and contact details
+   ----------------------------------------------------------
+   Paste a YouTube link into "url" for each film. Any of these work:
+   https://www.youtube.com/watch?v=XXXXXXXXXXX
+   https://youtu.be/XXXXXXXXXXX
+   https://www.youtube.com/shorts/XXXXXXXXXXX
+   kind must be: "highlight", "teaser", "feature" or "reel"
+   Leave url empty ("") to show a "Video coming soon" placeholder.
+   The first film in the list becomes the large featured film.
+   ========================================================== */
+const FILMS = [
+  { title: "Aanya and Vihaan", kind: "highlight", note: "Destination wedding, 5 minutes", url: "" },
+  { title: "Meera and Rohan",  kind: "teaser",    note: "Delivered the day after, 90 seconds",               url: "" },
+  { title: "Simran and Dev",   kind: "feature",   note: "Ceremony and speeches, 28 minutes",     url: "" },
+  { title: "Isha and Kabir",   kind: "highlight", note: "Sangeet and wedding, 4 minutes",    url: "" },
+  { title: "Tara and Arjun",   kind: "teaser",    note: "Made for social media",           url: "" },
+  { title: "Naina and Sameer", kind: "reel",      note: "Vertical, made for Instagram",                url: "" }
+];
+
+const SITE = {
+  email: "hello@kgcinecraft.com",
+  whatsappNumber: "910000000000",        // country code + number, digits only
+  whatsappLabel: "+91 00000 00000",
+  instagramUrl: "https://www.instagram.com/",
+  instagramLabel: "@kgcinecraft",
+  youtubeChannelUrl: "https://www.youtube.com/"
+};
+/* ========================================================== */
+
+(function () {
+  const KINDS = { highlight: "Highlight film", teaser: "Teaser", feature: "Feature film", reel: "Reel" };
+  const $ = (s, r) => (r || document).querySelector(s);
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  /* Contact details */
+  $("#c-email").href = "mailto:" + SITE.email; $("#c-email").textContent = SITE.email;
+  $("#c-wa").href = "https://wa.me/" + SITE.whatsappNumber; $("#c-wa").textContent = SITE.whatsappLabel;
+  $("#c-ig").href = SITE.instagramUrl; $("#c-ig").textContent = SITE.instagramLabel;
+  $("#c-yt").href = SITE.youtubeChannelUrl;
+  $("#yt-link").href = SITE.youtubeChannelUrl;
+  $("#yr").textContent = new Date().getFullYear();
+
+  /* Mobile menu */
+  const header = $(".site-header"), menuBtn = $(".menu-btn");
+  menuBtn.addEventListener("click", () => {
+    const open = header.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", open);
+  });
+  document.querySelectorAll(".site-nav a").forEach(a => a.addEventListener("click", () => {
+    header.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false");
+  }));
+
+  /* YouTube helpers */
+  function ytInfo(u) {
+    if (!u) return null;
+    const m = u.match(/(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/|live\/|v\/))([\w-]{11})/);
+    const id = m ? m[1] : (/^[\w-]{11}$/.test(u.trim()) ? u.trim() : null);
+    return id ? { id: id, short: /\/shorts\//.test(u) } : null;
+  }
+
+  /* Films grid */
+  const grid = $("#films");
+  function render(filter) {
+    const list = FILMS.filter(f => filter === "all" || f.kind === filter);
+    grid.innerHTML = list.map((f, i) => {
+      const yt = ytInfo(f.url), poster = "p" + ((FILMS.indexOf(f) % 6) + 1);
+      const thumb = yt
+        ? '<button class="thumb ' + poster + '" type="button" data-id="' + yt.id + '" data-short="' + yt.short + '" aria-label="Play ' + esc(f.title) + '">' +
+          '<img src="https://i.ytimg.com/vi/' + yt.id + '/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="play"></span></button>'
+        : '<div class="thumb empty ' + poster + '"><span>Video coming soon</span></div>';
+      return '<article class="film' + (i === 0 ? " lead" : "") + '">' + thumb +
+        "<h3>" + esc(f.title) + "</h3><p>" + esc(KINDS[f.kind] || "Film") + (f.note ? ", " + esc(f.note).replace(/^./, c => c.toLowerCase()) : "") + "</p></article>";
+    }).join("");
+  }
+  render("all");
+  document.querySelectorAll(".filters button").forEach(b => b.addEventListener("click", () => {
+    document.querySelectorAll(".filters button").forEach(x => x.setAttribute("aria-pressed", x === b));
+    render(b.dataset.filter);
+  }));
+
+  /* Video player */
+  const dlg = $("#player"), box = $("#player-box");
+  grid.addEventListener("click", e => {
+    const b = e.target.closest("button.thumb"); if (!b) return;
+    dlg.classList.toggle("portrait", b.dataset.short === "true");
+    box.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + b.dataset.id +
+      '?autoplay=1&rel=0&modestbranding=1" title="Wedding film" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
+    dlg.showModal();
+  });
+  function closePlayer() { dlg.close(); }
+  dlg.addEventListener("close", () => { box.innerHTML = ""; });
+  $("#close-player").addEventListener("click", closePlayer);
+  dlg.addEventListener("click", e => { if (e.target === dlg) closePlayer(); });
+
+  /* Before/after grade slider */
+  const frame = $("#frame"), handle = $("#handle");
+  let pos = 100, raf = 0, dragging = false, touched = false;
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function setPos(p) {
+    pos = Math.max(0, Math.min(100, p));
+    frame.style.setProperty("--pos", pos + "%");
+    handle.setAttribute("aria-valuenow", Math.round(pos));
+  }
+  function fromEvent(e) { const r = frame.getBoundingClientRect(); setPos((e.clientX - r.left) / r.width * 100); }
+  function stopIntro() { touched = true; cancelAnimationFrame(raf); }
+  frame.addEventListener("pointerdown", e => { stopIntro(); dragging = true; frame.setPointerCapture(e.pointerId); fromEvent(e); });
+  frame.addEventListener("pointermove", e => { if (dragging) fromEvent(e); });
+  ["pointerup", "pointercancel"].forEach(t => frame.addEventListener(t, () => { dragging = false; }));
+  handle.addEventListener("keydown", e => {
+    const step = e.shiftKey ? 10 : 4; let used = true;
+    if (e.key === "ArrowLeft") setPos(pos - step);
+    else if (e.key === "ArrowRight") setPos(pos + step);
+    else if (e.key === "Home") setPos(0);
+    else if (e.key === "End") setPos(100);
+    else used = false;
+    if (used) { e.preventDefault(); stopIntro(); }
+  });
+  if (reduce) { setPos(50); }
+  else {
+    /* One intro moment: the footage starts flat, then the grade sweeps in */
+    setPos(100);
+    const start = performance.now() + 700, dur = 2600;
+    const tick = t => {
+      if (touched) return;
+      const k = Math.min(1, Math.max(0, (t - start) / dur)), eased = 1 - Math.pow(1 - k, 3);
+      setPos(100 - 50 * eased);
+      if (k < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+  }
+
+  /* Enquiry form: opens the visitor's email app with the details filled in.
+     (GitHub Pages has no server. For a real form inbox, swap this for Formspree or Web3Forms.) */
+  $("#enquiry").addEventListener("submit", e => {
+    e.preventDefault();
+    const f = e.target, note = $("#form-note");
+    if (!f.name.value.trim() || !/\S+@\S+\.\S+/.test(f.email.value)) {
+      note.textContent = "Please add your name and a valid email address."; return;
+    }
+    const body = "Name: " + f.name.value + "\nEmail: " + f.email.value + "\nNeed: " + f.need.value +
+      "\nWedding date: " + f.date.value + "\n\n" + f.message.value;
+    location.href = "mailto:" + SITE.email + "?subject=" + encodeURIComponent("Wedding film enquiry from " + f.name.value) + "&body=" + encodeURIComponent(body);
+    note.textContent = "Your email app should open with the enquiry filled in. If it doesn't, write to " + SITE.email + ".";
+  });
+})();
+</script>
+</body>
+</html>
